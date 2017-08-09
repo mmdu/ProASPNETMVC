@@ -14,13 +14,26 @@
     <tr><td> Price </td><td> @Model.Price</td></tr>
     <tr>
         <td>Stock Level</td>
-        <td>@ViewBag.ProductCount</td>
+        <td>
+            @if (0 == ViewBag.ProuctCount)
+            {
+                @: out of stock
+            }
+            else if (ViewBag.ProductCount == 1)
+            {
+                <b>Low Stock (@ViewBag.ProductCount)</b>
+            }
+            else
+            {
+                @ViewBag.ProductCount
+            }
+        </td>
     </tr>
     </tbody>
 </table>
 
-<div data-discount="@ViewBag.ApplyDiscount" data-Express=" @ViewBag.ExpressShip"
-     data-supplier=" @ViewBag.Supplier">
+<div data-Discount="@ViewBag.ApplyDiscount" data-Express=" @ViewBag.ExpressShip"
+     data-Supplier=" @ViewBag.Supplier">
     The contianing element has data attributes
 </div>
 

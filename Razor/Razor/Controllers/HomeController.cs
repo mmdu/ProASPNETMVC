@@ -37,5 +37,17 @@ namespace Razor.Controllers
             ViewBag.Supplier = null;
             return View(myProduct);
         }
+
+        public ActionResult DemoArray()
+        {    Product[] array ={        
+                new Product { Name = "weww", Price = 2323 },           
+               new Product { Name = "2weww", Price = 3323 },            
+               new Product { Name = "3weww", Price = 4323 },            
+               new Product { Name = "4weww", Price = 5323 },            
+               new Product { Name = "5weww", Price = 6323 },            
+               new Product { Name = "7weww", Price = 7323 }
+             };
+            return View(array);
+        }
     }
 }
