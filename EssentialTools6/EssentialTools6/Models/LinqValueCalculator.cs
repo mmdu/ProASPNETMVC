@@ -5,11 +5,18 @@ using System.Web;
 
 namespace EssentialTools6.Models
 {
-    public class LinqValueCalculator
+    public class LinqValueCalculator:IValueCalculator
+
     {
+        private IDiscountHelper discounter;
+
+        public LinqValueCalculator(IDiscountHelper discountParam)
+        {
+            discounter = discountParam;
+        }
         public decimal ValueProducts(IEnumerable<Product> products)
         {
-            return products.Sum(p => p.Price);
+            return discounter.ApplyDiscount( products.Sum(p =>p.Price));
         }
     }
 }

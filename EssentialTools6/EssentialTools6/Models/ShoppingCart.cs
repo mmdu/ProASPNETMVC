@@ -7,16 +7,16 @@ namespace EssentialTools6.Models
 {
     public class ShoppingCart
     {
-        private LinqValueCalculator calc;
+        private  IValueCalculator calc;
                     
-        public ShoppingCart(LinqValueCalculator calcPara)
+        public ShoppingCart( IValueCalculator calcPara)  // Encapsul ,only need interface here , no need  linqValueCalculator
         {
             calc = calcPara;
         }
 
         public IEnumerable<Product> Products { get; set; }
 
-        public decimal CalculateProductTotal()
+        public decimal CalculateProductTotal() // only interface here , 
         {
             return calc.ValueProducts(Products);
         }
