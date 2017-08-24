@@ -33,7 +33,8 @@ namespace EssentialTools6.Infrastructure
         private void AddBinding()   // bind and to confgirue relationship of IValueCa and LinqValueCal 
         {
             Kernel.Bind<IValueCalculator>().To<LinqValueCalculator>();
-            Kernel.Bind<IDiscountHelper>().To<DefaultDiscountHelper>();
+           // Kernel.Bind<IDiscountHelper>().To<DefaultDiscountHelper>().WithPropertyValue("DiscountSize",20M);
+            Kernel.Bind<IDiscountHelper>().To<DefaultDiscountHelper>().WithConstructorArgument("discountParam", 50M);
         }
     }
 }

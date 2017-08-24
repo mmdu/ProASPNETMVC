@@ -12,13 +12,16 @@ namespace EssentialTools6.Models
 
     public class DefaultDiscountHelper : IDiscountHelper
     {
+        public decimal DiscountSize;
+
+        public DefaultDiscountHelper(decimal discoutnParam)
+        {
+            DiscountSize = discoutnParam;
+        }
         public decimal ApplyDiscount(decimal totalParam)
         {
-            return (totalParam - (10m / 100m * totalParam));
+            return (totalParam - (DiscountSize / 100m * totalParam));
         }
     }
-    public class Discount
-    {
-        
-    }
-}
+
+}  
