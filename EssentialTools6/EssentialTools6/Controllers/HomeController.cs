@@ -11,7 +11,7 @@ namespace EssentialTools6.Controllers
     {
         private IValueCalculator calc;
         // GET: Home
-        public HomeController(IValueCalculator calcParam)   // declaim a dependency here  interface
+        public HomeController(IValueCalculator calcParam,IValueCalculator calc2)   // declaim a dependency here  interface
         {
             calc = calcParam;
         }
