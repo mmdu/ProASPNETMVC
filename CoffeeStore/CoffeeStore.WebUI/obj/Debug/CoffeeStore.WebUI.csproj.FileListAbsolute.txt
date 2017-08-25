@@ -1,0 +1,1 @@
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\obj\Debug\CoffeeStore.WebUI.csprojResolveAssemblyReference.cache
