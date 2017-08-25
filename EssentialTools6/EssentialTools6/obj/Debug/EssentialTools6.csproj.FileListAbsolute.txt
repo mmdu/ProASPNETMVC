@@ -98,3 +98,11 @@ C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\
 C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\obj\Debug\EssentialTools6.csprojResolveAssemblyReference.cache
 C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\obj\Debug\EssentialTools6.dll
 C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\obj\Debug\EssentialTools6.pdb
+C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\Xamarin.Forms.Core.dll
+C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\Xamarin.Forms.Platform.dll
+C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\Xamarin.Forms.Xaml.dll
+C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\Xamarin.Forms.Core.pdb
+C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\Xamarin.Forms.Core.xml
+C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\Xamarin.Forms.Platform.pdb
+C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\Xamarin.Forms.Xaml.pdb
+C:\Users\ITDS DFW\Source\Repos\ProASPNETMVC\EssentialTools6\EssentialTools6\bin\Xamarin.Forms.Xaml.xml
