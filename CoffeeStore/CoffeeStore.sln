@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeStore.WebUI", "CoffeeStore.WebUI\CoffeeStore.WebUI.csproj", "{F00D7142-146E-429B-880A-4315BBB3C657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{2431695B-A35B-4647-A49B-C37CAEB8B5F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeStore.Domain", "SportsStore.Domain\CoffeeStore.Domain.csproj", "{2431695B-A35B-4647-A49B-C37CAEB8B5F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeStore.UnitTests", "CoffeeStore.UnitTests\CoffeeStore.UnitTests.csproj", "{31D8C75A-624D-418D-B90B-C81ADF73AF87}"
 EndProject
