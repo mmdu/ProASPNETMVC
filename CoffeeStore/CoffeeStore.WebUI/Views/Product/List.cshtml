@@ -1,12 +1,12 @@
-﻿@using CoffeeStore.Domain.Entities
-@model IEnumerable<Product>
+﻿@using CoffeeStore.WebUI.HtmlHelpers
+@model  CoffeeStore.WebUI.Models.ProductListViewModel
 
 @{
-    ViewBag.Title = "List Product";
+    ViewBag.Title = "List Product from LocalDB";
 }
 
 <h2>List</h2>
-@foreach (var p in Model)
+@foreach (var p in Model.Products)
 {
     <div>
         <h3>@p.Name</h3>
@@ -14,3 +14,7 @@
         <h4>@p.Price.ToString("c")</h4>
     </div>
 }
+
+<div>
+    @Html.PageLinks(Model.PagingInfo, x=>Url.Action("List",new {Page =x}))
+</div>
