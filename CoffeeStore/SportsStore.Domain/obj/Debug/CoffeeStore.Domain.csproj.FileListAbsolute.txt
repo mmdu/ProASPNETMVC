@@ -16,3 +16,8 @@ C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\bin\Debu
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\obj\Debug\CoffeeStore.Domain.csprojResolveAssemblyReference.cache
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml

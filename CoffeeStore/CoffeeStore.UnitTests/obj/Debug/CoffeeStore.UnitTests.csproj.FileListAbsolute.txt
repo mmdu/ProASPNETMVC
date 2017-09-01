@@ -45,3 +45,5 @@ C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.UnitTests\bin\D
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.UnitTests\obj\Debug\CoffeeStore.UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.UnitTests\obj\Debug\CoffeeStore.UnitTests.dll
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.UnitTests\obj\Debug\CoffeeStore.UnitTests.pdb
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.UnitTests\bin\Debug\EntityFramework.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.UnitTests\bin\Debug\EntityFramework.xml

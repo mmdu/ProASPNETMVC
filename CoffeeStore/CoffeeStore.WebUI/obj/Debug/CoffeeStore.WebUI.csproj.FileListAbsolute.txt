@@ -44,3 +44,7 @@ C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\bin\Syste
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\bin\System.Web.Mvc.xml
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\obj\Debug\CoffeeStore.WebUI.dll
 C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\obj\Debug\CoffeeStore.WebUI.pdb
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\bin\EntityFramework.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\bin\EntityFramework.xml
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\CoffeeStore\CoffeeStore.WebUI\bin\EntityFramework.SqlServer.xml
