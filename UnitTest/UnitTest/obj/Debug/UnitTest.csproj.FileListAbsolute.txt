@@ -1,0 +1,7 @@
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\UnitTest\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\UnitTest\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\UnitTest\UnitTest\bin\Debug\nunit.framework.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\UnitTest\UnitTest\bin\Debug\nunit.framework.xml
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\UnitTest\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\UnitTest\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\UnitTest\UnitTest\obj\Debug\UnitTest.pdb
