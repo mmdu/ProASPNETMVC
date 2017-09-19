@@ -26,9 +26,15 @@ namespace UnitTest
             Balance += amount;
         }
 
-        public void Withdraw(int amount)
+        public bool Withdraw(int amount)
         {
-            Balance -= amount;
+          //  Balance -= amount;
+            if (Balance>=amount)
+            {
+                Balance -= amount;
+                return true;
+            }
+            return false;
         }
 
         [TestFixture]
@@ -74,6 +80,35 @@ namespace UnitTest
                 
                 var ar = Assert.Throws<ArgumentException>(() => ba.Deposit(-1));
                 StringAssert.StartsWith("deposition must be positive", ar.Message);
+            }
+
+        }
+
+        [TestFixture]
+        public class  DataDrivenTest
+        {
+
+            private BankAcount ba;
+
+            [SetUp]
+            public void Setup()
+            {
+                ba = new BankAcount(100);
+            }
+
+            [Test]
+            [TestCase(50,true, 50)]
+            [TestCase(100,true, 0)]
+            [TestCase(1000, false, 100)]
+            public void TestMultipleWithdrawalScenarios(int amountToWithdraw, bool shouldSuccess, int expectBalnce)
+            {
+                var result = ba.Withdraw(amountToWithdraw);
+                Warn.If(!result,"Failed for some reason");
+                Assert.Multiple(() =>
+                {
+                    Assert.That(result, Is.EqualTo(shouldSuccess));
+                    Assert.That(expectBalnce,Is.EqualTo(ba.Balance));
+                });
             }
 
         }
