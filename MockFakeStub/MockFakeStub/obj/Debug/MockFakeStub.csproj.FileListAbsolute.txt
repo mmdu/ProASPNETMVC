@@ -1,0 +1,10 @@
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\bin\Debug\MockFakeStub.exe.config
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\bin\Debug\MockFakeStub.exe
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\bin\Debug\MockFakeStub.pdb
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\bin\Debug\nunit.framework.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\bin\Debug\nunit.framework.xml
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\obj\Debug\MockFakeStub.csprojResolveAssemblyReference.cache
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\obj\Debug\MockFakeStub.exe
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\obj\Debug\MockFakeStub.pdb
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\bin\Debug\ImpromptuInterface.dll
+C:\Users\ITDS\Source\Repos\ProASPNETMVC2\MockFakeStub\MockFakeStub\bin\Debug\ImpromptuInterface.xml
