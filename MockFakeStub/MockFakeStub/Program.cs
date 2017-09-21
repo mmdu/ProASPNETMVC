@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -97,7 +98,42 @@ namespace MockFakeStub
             #endregion
         }
 
-        
+        public class LogMock : ILog
+        {
+            private bool expectedResult;
+            public Dictionary<string, int> MethodCallCount;
+
+            public LogMock(bool expectedResult)
+            {
+                this.expectedResult = expectedResult;
+                MethodCallCount=new Dictionary<string, int>();
+            }
+
+            #region Implementation of ILog
+
+            public bool write(string msg)
+            {
+                AddorIncrement(nameof(write));
+                return expectedResult;
+
+            }
+
+            #endregion
+
+            private void AddorIncrement(string methodName)
+            {
+                if (MethodCallCount.ContainsKey(methodName))
+                {
+                    MethodCallCount[methodName]++;
+                }
+                else
+                {
+                    MethodCallCount.Add(methodName,1);
+                }
+            }
+        }
+
+                
 
         [TestFixture]
         public class  BankAccountTest
@@ -141,6 +177,21 @@ namespace MockFakeStub
                 Assert.That(ba.Balance, Is.EqualTo(200));
 
             }
+
+            [Test]
+            public void DepositionWithMock()
+            {
+                var log=new LogMock(true);
+                var ba=new BankAccount(log) {Balance = 100};
+                ba.Deposit(100);
+                Assert.Multiple(() =>
+                {
+                    Assert.That(ba.Balance, Is.EqualTo(200));
+                    Assert.That(log.MethodCallCount[nameof(LogMock.write)], Is.EqualTo(1));
+
+                });
+            }
+
         }
     }
 }
