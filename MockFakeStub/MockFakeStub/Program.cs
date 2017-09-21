@@ -29,7 +29,7 @@ namespace MockFakeStub
         public class  BankAccount
         {
             public int Balance { get; set; }
-            private readonly ILog log;
+            public   ILog log;
 
             public BankAccount(ILog log)
             {
@@ -63,7 +63,7 @@ namespace MockFakeStub
         public class Null<T>:  DynamicObject where T : class 
         {
             // current object, the fake T. T is interface here 
-            public static T instance => new Null<T>().ActLike<T>();
+            public static T Instance => new Null<T>().ActLike<T>();
 
             #region Overrides of DynamicObject
             // retrun default value of methode 
@@ -75,6 +75,30 @@ namespace MockFakeStub
 
             #endregion
         }
+
+
+        // stubs, with results , fake object,
+        public class NullLogWithResult: ILog
+        {
+            private bool expectedResult;
+
+            public NullLogWithResult(bool expectedResult)
+            {
+                this.expectedResult = expectedResult;
+            }
+
+            #region Implementation of ILog
+
+            public bool write(string msg)
+            {
+                return expectedResult;
+            }
+
+            #endregion
+        }
+
+        
+
         [TestFixture]
         public class  BankAccountTest
         {
@@ -98,11 +122,21 @@ namespace MockFakeStub
 
             //ImpromptuInterface , multi dynamic  fake object
 
+            //[Test]
+            //public void DepositionUnitTestWithDynamicFake()
+            //{
+            //    var log = Null<ILog>.Instance;
+            //    ba = new BankAccount(log) {Balance = 100};
+            //    ba.Deposit(100);
+            //    Assert.That(ba.Balance, Is.EqualTo(200));
+
+            //}
+
             [Test]
-            public void DepositionUnitTestWithDynamicFake()
+            public void DepositionUnitTestWithStub()
             {
-                var log = Null<ILog>.instance;
-                ba = new BankAccount(log) {Balance = 100};
+                var log = new NullLogWithResult(true);
+                ba = new BankAccount(log) { Balance = 100 };
                 ba.Deposit(100);
                 Assert.That(ba.Balance, Is.EqualTo(200));
 
